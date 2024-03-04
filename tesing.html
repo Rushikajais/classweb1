@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    function myfunction() {
+        var un = document.forms["myForm"]["uname"].value;
+        var pw = document.forms["myForm"]["pass"].value;
+        if (un == "rushika" && pw == "12345") {
+            window.location.href = "main.html"; // Replace "index.html" with the desired URL
+            return false; // Prevent the form from submitting
+        } else {
+            alert("Invalid Username and Password");
+            return false; // Prevent the form from submitting
+        }
+    }
+</script>

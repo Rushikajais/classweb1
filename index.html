@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 5px solid darkorchid;
+    margin-top: 7em;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+
+    color: black;
+    border: 3px solid cyan;
+  }
+
+  .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #333;
+  }
+</style>
+
+<body>
+  <img src="download logo.png" alt="" class="one">
+  <div class="three">
+    <p>
+      Email ID: advancecomputer2016@gmail.com<br>
+      Mob No:9373106604
+    </p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="#aboutme">About</a></li>
+      <li><a href="Courses.html">Course</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="online.html">Online Exam</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="index.html">Logout</a></li>
+      <input type="textfield" name="hjg" placeholder="Search" id="textfield1">
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Login</h2>
+
+    <form name="myForm" method="post" action="javascript:void(0);"
+    onsubmit="return myfunction();">
+      <div class="form-group">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="uname" placeholder="Enter your username">
+      </div>
+
+      <div class="form-group">
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="pass" placeholder="Enter your password">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn">Login</button>
+      </div>
+    </form>
+  </div>
+  
+    <script type="text/javascript">
+      function myfunction() {
+        var un = document.forms["myForm"]["uname"].value;
+      var pw = document.forms["myForm"]["pass"].value;
+      if (un == "rushika" && pw == "12345") {
+        window.location.href = "main.html"; // Replace "index.html" with the desired URL
+      return false; // Prevent the form from submitting
+        } else {
+        alert("Invalid Username and Password");
+      return false; // Prevent the form from submitting
+        }
+    }
+  </script>
+  
+</body>
+
+</html>

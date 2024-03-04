@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-color: #000;
+        /* Black background color */
+        color: #fff;
+        /* White text color */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Semi-transparent black background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn {
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: red;
+        color: white;
+        /* Dark gray on hover */
+    }
+</style>
+
+<body>
+    <img src="download logo.png" alt="" class="one">
+    <div class="three">
+        <p>
+            Email ID: advancecomputer2016@gmail.com<br>
+            Mob No:9373106604
+        </p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="Courses.html">Course</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="online.html">Online Exam</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Login.html">Login me</a></li>
+            <input type="textfield" name="hjg" placeholder="Search" id="textfield1">
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Admisson Form </h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Mobile:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Date of Birth:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Qualification:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Email:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
